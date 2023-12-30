@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.aspx" />
     <Content Include="packages.config" />
     <Content Include="plugins\bootstrap\js\bootstrap.bundle.js.map" />
     <Content Include="plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
@@ -126,7 +127,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.aspx" />
     <Content Include="dist\css\adminlte.css" />
     <Content Include="dist\css\adminlte.min.css" />
     <Content Include="dist\css\alt\adminlte.components.css" />
@@ -329,6 +329,7 @@
     <Content Include="plugins\toastr\toastr.css" />
     <Content Include="plugins\toastr\toastr.min.css" />
     <Content Include="plugins\toastr\toastr.min.js" />
+    <Content Include="side.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -347,6 +348,13 @@
       <DependentUpon>admin.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="side.ascx.cs">
+      <DependentUpon>side.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="side.ascx.designer.cs">
+      <DependentUpon>side.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
